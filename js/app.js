@@ -62,9 +62,13 @@ document.getElementById('verifyCode').addEventListener('click', function(){
 
    let lastPrice = parseFloat(totalPrice);
    
-    if(promoCode == 'stevekaku'){
-       
+    if(promoCode == 'stevekaku'){ 
+
       lastPrice = lastPrice * .8;
+      
+      totalPriceText.innerText = lastPrice;
+
+      inputCode.value = '';
         
     }
 });
